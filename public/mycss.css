@@ -1,0 +1,453 @@
+body {
+    /* background-color: rgba(29, 161, 242, 9); */
+    background-color: rgb(10, 205, 215);
+    position: relative;
+
+    width: 100%;
+}
+
+.hero {
+    background-color: #84f3ff;
+    background-image: url('home.png');
+    color: rgb(243, 246, 248);
+    margin: 2rem 0 3rem 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    position: relative;
+
+
+}
+
+.hero-text {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.5rem;
+}
+
+.hero p {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+
+
+}
+
+.hero .icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(243, 164, 18);
+    /* padding: 0.2rem .5rem .2rem .5rem; */
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.hero-icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.homepage_header {
+    text-align: center;
+    margin-top: 3rem;
+    /* margin-bottom: 5rem; */
+    padding: 0.5rem;
+    font-size: 5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.add_device_header {
+    text-align: left;
+    margin-top: 5%;
+    font-size: 4em;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.add_device_form {
+    background-color: aliceblue;
+    border: 1px solid rgb(0, 0, 0, 0.8);
+    min-height: 14rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    margin: 5rem 0 0 0;
+    border-radius: 0.5rem;
+}
+
+.input_form {
+    width: 100%;
+    background-color: aliceblue;
+    position: absolute;
+    margin-top: 5%;
+    border-radius: 1rem;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.input_fo {
+    width: 100%;
+    background-color: aliceblue;
+    position: absolute;
+    margin-top: 10rem;
+    border-radius: 1rem;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.types_cards {
+    width: 120vmin;
+    height: 20vh;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 26rem;
+    top: 16rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.type_card {
+    height: 50px;
+    width: 130px;
+    position: relative;
+    /* border: 1px solid black; */
+}
+
+.custom_checkBox {
+    -webkit-appearance: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue;
+    border-radius: 1rem;
+    cursor: pointer;
+    box-shadow: 15px 15px 10px rgba(2, 28, 53, 0.01);
+    outline: none;
+
+}
+
+.custom_checkBox:hover {
+    box-shadow: 15px 15px 10px rgba(3, 33, 61, 0.1);
+    transform: scale(1.01);
+}
+
+.labels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+
+}
+
+.devices {
+    position: relative;
+    height: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.devices input[type="radio"] {
+    display: none;
+}
+
+.devices_container {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 12px rgba(3, 33, 61, 0.1);
+    min-height: 3rem;
+    margin: 17rem 0 0 0;
+    border-radius: 0.5rem;
+}
+
+
+.controls_form {
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    width: 100%;
+    top: 8rem;
+
+}
+
+.selected_device {
+    position: absolute;
+    margin: 8rem 0 0 0;
+
+}
+
+.selected_device label .device_item:hover {
+    color: aqua;
+    padding: 4px;
+    border-bottom: 1px solid rgb(255, 166, 0);
+}
+
+
+.selected_device label {
+    color: aqua;
+    padding: 0 1rem 0 1rem;
+}
+
+.device_item {
+    top: 3px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.11);
+    min-width: 8rem;
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+    box-shadow: 15px 15px 10px rgba(3, 33, 61, 0.5);
+}
+
+
+
+.device_item .fa-tv {
+    padding-right: .5rem;
+    color: rgb(0, 108, 231);
+}
+
+.device_item .fa-trash-can {
+    color: rgba(134, 48, 48, 0.909);
+    margin-left: 0.3rem;
+}
+
+.status_viewer {
+    background-color: aliceblue;
+    border: 1px solid rgb(0, 0, 0, 0.8);
+    min-height: 13rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    margin: 11rem 0 0 0;
+    border-radius: 0.5rem;
+
+}
+
+.status_viewer h3 {
+
+    width: 100%;
+}
+
+.card {
+    background-color: aliceblue;
+    margin-top: 0.5rem;
+    width: 20%;
+    height: 25vh;
+    text-align: center;
+    box-shadow: 15px 15px 10px rgba(2, 28, 53, 0.1);
+    transform: scale(1.0001);
+}
+
+.card h3 {
+    padding-top: 5%;
+}
+
+.current-status-heading {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.status-response {
+    color: green;
+    font-size: 1.5em;
+    margin-top: 1em;
+}
+
+.menuBar {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0.2rem;
+    display: flex;
+    position: relative;
+    margin: 3rem 0 0;
+    justify-content: space-evenly;
+}
+
+.logo {
+    position: absolute;
+    font-size: 2rem;
+    color: rgb(11, 62, 199);
+    left: 0.5rem;
+    top: 0;
+}
+
+.logospan {
+    font-size: 1rem;
+    color: black;
+    padding-bottom: 4px;
+}
+
+.fa-house {
+    font-size: 1.3rem;
+    border: 1px solid black;
+}
+
+li {
+    display: inline-block;
+    padding: 0.6rem 3rem 0;
+}
+
+
+.navLinks a {
+    text-decoration: dotted;
+    color: aliceblue;
+}
+
+.dropDownLink {
+    position: relative;
+    color: aliceblue;
+    z-index: 1;
+}
+
+.dropDownLink a {
+    padding: 1px;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+
+.menu ul a:hover {
+    color: orange;
+    border-bottom: 2px solid orange;
+
+}
+
+.menu {
+    display: none;
+}
+
+.menu ul {
+    display: block;
+    margin-top: 0.5rem;
+    border-bottom-left-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.menu ul a {
+    color: black;
+    font-weight: 600;
+}
+
+
+
+.dropDownLink:hover .menu {
+    display: block;
+    padding-top: 0.5rem;
+    position: absolute;
+    left: 0;
+
+}
+
+.menu ul li {
+    width: 135px;
+    padding: 5px 5px 3.1px 5px;
+}
+
+/* .control_device {
+    margin-top: 12rem;
+    background-color: rgba(0, 0, 0, 0.1);
+} */
+
+/* .card_underline {
+    width: 80%;
+    background-color: purple;
+    height: 0.5em;
+    margin-left: 5%;
+} */
+
+
+.form_field {
+    display: none;
+}
+
+.submit_btn {
+    margin-top: 1rem;
+    width: 5rem;
+    height: 2rem;
+    border-radius: 0.3rem;
+    color: red;
+    font-weight: 3px;
+}
+
+footer {
+
+    justify-content: center;
+    font-style: italic;
+    margin-top: 2rem;
+    display: flex;
+    padding-top: 0.5rem;
+    border-radius: 0.2rem;
+    background-color: rgba(0, 0, 0, 0.3);
+
+}
+
+.add_device {
+    position: relative;
+}
+
+#todelete {
+    color: black;
+}
+
+.warning {
+    color: rgb(239, 149, 39);
+}
+
+.deleteBtn {
+    display: none;
+}
+
+.success-msg {
+    font-size: x-large;
+    color: green;
+    display: none;
+}
+
+.about-page {
+    margin-top: 2.3rem;
+}
+
+.about-page p {
+    font-size: large;
+}
+
+.dev_name {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 3rem;
+
+}
+
+.dev_name p {
+    display: inline-block;
+    margin-left: 3rem;
+    font-size: large;
+}
+
+.dev_name i {
+    font-size: 3rem;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background-color: aliceblue;
+}
+
+.contact {
+    margin-top: 1rem;
+}
+
+.contact i {
+    margin-right: 0.5rem;
+}
